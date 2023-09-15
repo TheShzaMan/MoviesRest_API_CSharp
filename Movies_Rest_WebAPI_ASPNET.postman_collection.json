@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "98fa16ea-f4d4-4854-9376-51e5c60ddee6",
+		"name": "Movies_Rest_WebAPI_ASPNET",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29744212"
+	},
+	"item": [
+		{
+			"name": "Get All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/Movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7052/api/Movies/1/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Movies",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create (Post)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Cupid's Kryptonite\",\r\n    \"RunningTime\": 120,\r\n    \"Genre\": \"Rom Com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7052/api/Movies",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update (Put)",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Title\": \"Cupid's Falling\",\r\n    \"RunningTime\": 120,\r\n    \"Genre\": \"Romantic Comedy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7052/api/Movies/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Movies",
+						"6"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7052/api/Movies/6",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7052",
+					"path": [
+						"api",
+						"Movies",
+						"6"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
